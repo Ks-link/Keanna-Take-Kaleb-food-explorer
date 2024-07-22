@@ -4,6 +4,7 @@
 .aside-cuisines {
   margin-bottom: 0.625rem;
   background-color: $aside-light;
+
   h3 {
     @extend %aside-header;
   }
@@ -20,6 +21,7 @@
       width: 7.4rem;
       padding: 0.5rem 0;
       list-style: none;
+
       a {
         color: $content-text-color;
       }
