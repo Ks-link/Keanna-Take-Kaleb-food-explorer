@@ -4,15 +4,49 @@
   background-color: $blog-background-color;
   padding: 0.625rem;
   margin-bottom: 0.625rem;
+  height: 23.5rem;
+  position: relative;
 
   .article-heading {
     h3 {
       font-size: 2rem;
       margin: 0;
     }
+
+    //added by keanna
+    p {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    // ^^^^^    
   }
 
   p {
     color: $content-text-color;
+    font-family: "Roboto Condensed", sans-serif; //
+    margin-bottom: 0;
+  }
+
+  //added by keanna
+  button {
+    background-color: $primary-color;
+    color: $white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    border: none;
+    padding: .4063rem;
+    position: absolute;
+    right: .625rem;
+    bottom: .75rem;
+  }
+
+  @media (min-width: $mobile-large) {
+
+    .article-heading {
+      h3 {
+        width: 85%;
+      }
+    }
   }
 }
