@@ -3,20 +3,39 @@
 
 figure {
     margin: 0 auto;
-    // position: relative;
+    position: relative;
 
     img {
-    max-width: 100%;
-    // height: 15rem;
-    margin: 0 auto;
+        width: 100%;
+        height: 14.5rem;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: 50%;
     }
 
     figcaption {
         position: absolute;
-        bottom: 0;
+        // this bottom val is for text to match the gap between each article
+        bottom: .25rem; 
         left: 0;
         right: 0;
-        background-color: #00000076;
+        background-color: #0000007a;
         color: #fff;
+        font-family: $headings-font;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0.7rem 0.6rem;
+    }
+}
+
+// 670 px
+@media (min-width: #{$tablet-large}) {
+    .section-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        
+        figure {
+            width: 50%;
+        }
     }
 }
