@@ -8,15 +8,13 @@ figure {
     img {
         width: 100%;
         height: 14.5rem;
-        margin: 0 auto;
         object-fit: cover;
-        object-position: 50%;
     }
 
     figcaption {
         position: absolute;
         // this bottom val is for text to match the gap between each article
-        bottom: .25rem; 
+        bottom: 0.25rem; 
         left: 0;
         right: 0;
         background-color: #0000007a;
@@ -34,9 +32,39 @@ figure {
         display: flex;
         flex-wrap: wrap;
         
-        .salad-pic, .pancake-pic {
-            width: 49.5%;
+        img {
+            height: 100%;
+            padding-bottom: .25rem;
         }
+
+        figcaption {
+            font-size: 1.35rem;
+            font-weight: 400;
+            padding: 0.65rem 0.55rem;
+        }
+
+        .mussel-pic {
+            width: 100%;
+        }
+
+        .salad-pic {
+            width: 50%;
+            padding-right: 0.125rem;
+
+            figcaption {
+                margin-right: 0.125rem;
+            }
+        }
+
+        .pancake-pic {
+            width: 50%;
+            padding-left: 0.125rem;
+
+            figcaption {
+                margin-left: 0.125rem;
+            }
+        }
+
 
     }
     
