@@ -4,8 +4,10 @@
   background-color: $blog-background-color;
   padding: 0.625rem;
   margin-bottom: 0.625rem;
-  height: 23.5rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  // height: 23.5rem;
+  // position: relative;
 
   .article-heading {
     h3 {
@@ -36,9 +38,14 @@
     font-weight: 700;
     border: none;
     padding: .4063rem;
-    position: absolute;
-    right: .625rem;
-    bottom: .75rem;
+    margin:0 0 0 auto;
+    // position: absolute;
+    // right: .625rem;
+    // bottom: .75rem;
+  }
+
+  img{
+    width:100%;
   }
 
   @media (min-width: $mobile-large) {
