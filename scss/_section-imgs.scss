@@ -34,8 +34,10 @@ figure {
         display: flex;
         flex-wrap: wrap;
         
-        figure {
-            width: 50%;
+        .salad-pic, .pancake-pic {
+            width: 49.5%;
         }
+
     }
+    
 }
