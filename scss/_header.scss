@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 0.625rem;
   background-color: $aside-light;
 
   .search-bar,
@@ -35,7 +35,12 @@
 }
 
 // should i use 25 rem for this?
-@media (min-width: 25rem) {
+@media (min-width: $mobile-large) {
+  .logo {
+
+    flex: 0.8;
+  }
+
   .logo-small {
     display: none;
   }
@@ -184,6 +189,11 @@ color: $primary-color;
       .social-links{
         display: none;
       }
+      // .top-header-row {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   flex: 2 1;
+      // }
      
     
       .search-bar{
